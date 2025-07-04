@@ -7,3 +7,10 @@ Inspired by Steller's Jay.
    - 3 thumb keys
    - Thumb keys extend inward. The home thumb key will be the innermost key. The goal is to avoid
      inward thumb curl.
+
+** TODOS
+   - ( ) design key layout
+   - ( ) decide on switches
+   - ( ) decide on keycaps
+   - ( ) decide on microcontroller
+   - ( ) design pcb
