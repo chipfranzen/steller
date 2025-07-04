@@ -4,9 +4,12 @@ Inspired by Steller's Jay.
 
 ** Design Decisions
    - 5x3 column-staggared finger matrix
+   - chocofi-style pinky stagger
+   - mild pinky splay
    - 3 thumb keys
    - Thumb keys extend inward. The home thumb key will be the innermost key. The goal is to avoid
      inward thumb curl.
+   - choc v1 switches and keycaps
 
 ** TODOS
    - ( ) design key layout

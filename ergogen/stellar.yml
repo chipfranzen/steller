@@ -1,0 +1,56 @@
+meta:
+  engine: 4.1.0
+units:
+  # proxy spacing variables
+  # choc switches
+  kx: cx
+  ky: cy
+  # padding variables
+  px: kx + 2
+  py: ky + 2
+  # render choc switches in the preview
+  $default_width: cx
+  $default_height: cy
+
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1py
+        spread: 1py
+      columns:
+        pinky:
+        ring:
+          key:
+            stagger: 0.7 * kx
+        middle:
+          key:
+            stagger: 0.35 * kx
+        index:
+          key:
+            stagger: -0.40 * kx
+        inner:
+          key:
+            stagger: -0.15 * kx
+      rows:
+        bottom:
+        home:
+        top:
+    thumbs:
+      key:
+        padding: 1py
+      columns:
+        home:
+        inner:
+          key:
+            splay: -10
+            spread: 1.25px
+            stagger: 0.55 * kx
+        outer:
+          key:
+            splay: -10
+            spread: 1.25px
+            stagger: 0.55 * kx
+      rows:
+        cluster:
+          shift: [4.1ky, -0.65ky]
