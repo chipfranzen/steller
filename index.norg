@@ -1,3 +1,9 @@
 * Steller Keyboard
 A 5 column ergonomic keyboard with 3 thumbkeys.
 Inspired by Steller's Jay.
+
+** Design Decisions
+   - 5x3 column-staggared finger matrix
+   - 3 thumb keys
+   - Thumb keys extend inward. The home thumb key will be the innermost key. The goal is to avoid
+     inward thumb curl.
