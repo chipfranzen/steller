@@ -1,0 +1,111 @@
+meta:
+  engine: 4.1.0
+units:
+  # proxy spacing variables
+  # choc switches
+  kx: cx
+  ky: cy
+  # padding variables
+  px: kx + 2
+  py: ky + 2
+  # render choc switches in the preview
+  $default_width: cx
+  $default_height: cy
+
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1py
+        spread: 1py
+      columns:
+        pinky:
+        ring:
+          key:
+            stagger: 0.7 * kx
+        middle:
+          key:
+            stagger: 0.35 * kx
+        index:
+          key:
+            stagger: -0.40 * kx
+        inner:
+          key:
+            stagger: -0.15 * kx
+      rows:
+        bottom:
+        home:
+        top:
+    thumbs:
+      key:
+        padding: 1py
+      columns:
+        home:
+        inner:
+          key:
+            splay: -10
+            spread: 1.25px
+            stagger: 0.55 * kx
+        outer:
+          key:
+            splay: -10
+            spread: 1.25px
+            stagger: 0.55 * kx
+      rows:
+        cluster:
+          shift: [4.1ky, -0.65ky]
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [kx, ky]
+  promicro:
+    - what: rectangle
+      size: [18.0, 33.0]
+      adjust:
+        shift: [4.8px, 2.05py]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_pinky_top
+          shift: [-0.5px, 0.5px]
+        - ref: matrix_ring_top
+          shift: [-0.5px, 0.5px]
+        - ref: matrix_middle_top
+          shift: [-0.5px, 0.5px]
+        - ref: matrix_middle_top
+          shift: [0.5px, 0.5px]
+        - ref: matrix_index_top
+          shift: [0.5px, 0.5px]
+        - ref: matrix_inner_top
+          shift: [0.5px, 0.5px]
+        - ref: matrix_inner_top
+          shift: [1.5px, 0.5px]
+        - ref: thumbs_outer_cluster
+          shift: [-0.5px, 0.5px]
+        - ref: thumbs_outer_cluster
+          shift: [0.5px, 0.5px]
+        - ref: thumbs_outer_cluster
+          shift: [0.5px, -0.5px]
+        - ref: thumbs_outer_cluster
+          shift: [-0.5px, -0.5px]
+        - ref: thumbs_inner_cluster
+          shift: [-0.5px, -0.5px]
+        - ref: thumbs_home_cluster
+          shift: [-0.5px, -0.5px]
+        - ref: matrix_pinky_bottom
+          shift: [-0.5px, -0.5px]
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+    - operation: subtract
+      name: promicro
