@@ -15,6 +15,8 @@ units:
 points:
   zones:
     matrix:
+      anchor:
+        shift: [100, -100]
       key:
         padding: 1py
         spread: 1py
@@ -37,6 +39,8 @@ points:
         home:
         top:
     thumbs:
+      anchor:
+        shift: [100, -100]
       key:
         padding: 1py
       columns:
@@ -65,9 +69,9 @@ outlines:
       where: true
       bound: false
       size: [kx, ky]
-  promicro:
+  kb2040:
     - what: rectangle
-      size: [18.0, 33.0]
+      size: [17.8, 35.0]
       adjust:
         shift: [4.8px, 2.05py]
   board:
@@ -102,10 +106,42 @@ outlines:
           shift: [-0.5px, -0.5px]
         - ref: matrix_pinky_bottom
           shift: [-0.5px, -0.5px]
-      fillet: 2
+      fillet: 3
   combo:
     - name: board
     - operation: subtract
       name: keys
     - operation: subtract
-      name: promicro
+      name: kb2040
+
+pcbs:
+  steller:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      promicro:
+        what: promicro
+        params:
+          orientation: "up"
+        where:
+          ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
+          shift: [-.15px, 1.15px]
+          rotate: -80

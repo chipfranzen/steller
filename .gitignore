@@ -1,2 +1,10 @@
 ergogen/output
-foo.py
+output
+steller/fp-info-cache
+steller/steller.kicad_prl
+steller/steller.kicad_pro
+steller/steller.kicad_sch
+steller/~steller.kicad_pcb.lck
+steller/steller-backups
+steller/_autosave*
+steller/~_autosave*
