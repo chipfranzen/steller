@@ -145,3 +145,38 @@ pcbs:
           ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
           shift: [-.15px, 1.15px]
           rotate: -80
+      trrs:
+        what: trrs_pj320a
+        params:
+          reversible: true
+          SL: GND
+          R2: P1
+          R1: VCC
+          TP: GND
+        where:
+          ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
+          shift: [.5px, 0px]
+          rotate: -80
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
+          shift: [.5px, -0.5px]
+          rotate: -80
+
+nets:
+  GND:
+    - [trrs, TP]
+    - [trrs, SL]
+    - [promicro, GND]       # match your MCU footprint name
+
+  VCC:
+    - [trrs, R1]
+    - [promicro, 3V3]       # or whatever pin powers 3.3V
+
+  TX:
+    - [trrs, R2]
+    - [promicro, GP1]
