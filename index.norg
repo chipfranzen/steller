@@ -3,13 +3,21 @@ A 5 column ergonomic keyboard with 3 thumbkeys.
 Inspired by Steller's Jay.
 
 ** Design Decisions
-   - 5x3 column-staggared finger matrix
-   - chocofi-style pinky stagger
-   - mild pinky splay
-   - 3 thumb keys
-   - Thumb keys extend inward. The home thumb key will be the innermost key. The goal is to avoid
-     inward thumb curl.
+   - 5x3 column-staggered finger matrix
+   - pinky
+   -- chocofi-style pinky stagger
+   -- mild pinky splay
+   -- top pinky on a separate column
+   - thumbs
+   -- 3 thumb keys
+   -- Thumb keys extend inward. The home thumb key will be the innermost key. The goal is to avoid
+      inward thumb curl.
    - choc v1 switches and keycaps
+    - ambient twilights
+   -- lamé keycaps
+    -- jclpcb can print them in a dye-able material
+   - Miryoku layout
+   - Angle the pcb and trrs to match the desired keyboard rotation.
 
 ** TODOS
    - ( ) design key layout
@@ -17,3 +25,7 @@ Inspired by Steller's Jay.
    - ( ) decide on keycaps
    - ( ) decide on microcontroller
    - ( ) design pcb
+
+** Open Questions
+   - Do I need two buttons? Boot and reset? I used both to put the kb2040 into bootloader mode for
+     the vimboard.

@@ -21,10 +21,28 @@ points:
         padding: 1py
         spread: 1py
       columns:
+        outer:
+          rows:
+            bottom:
+              skip: true
+            home:
+            top:
+              skip: true
         pinky:
+          key:
+            stagger: 0.3 * kx
+            splay: -5
+            spread: 1.05py
+          rows:
+            bottom:
+            home:
+            top:
+              skip: true
         ring:
           key:
             stagger: 0.7 * kx
+            splay: -5
+            spread: 1.1py
         middle:
           key:
             stagger: 0.35 * kx
@@ -78,7 +96,7 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: matrix_pinky_top
+        - ref: matrix_pinky_home
           shift: [-0.5px, 0.5px]
         - ref: matrix_ring_top
           shift: [-0.5px, 0.5px]
@@ -166,17 +184,3 @@ pcbs:
           ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
           shift: [.5px, -0.5px]
           rotate: -80
-
-nets:
-  GND:
-    - [trrs, TP]
-    - [trrs, SL]
-    - [promicro, GND]       # match your MCU footprint name
-
-  VCC:
-    - [trrs, R1]
-    - [promicro, 3V3]       # or whatever pin powers 3.3V
-
-  TX:
-    - [trrs, R2]
-    - [promicro, GP1]
