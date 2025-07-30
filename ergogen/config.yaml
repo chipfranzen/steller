@@ -30,9 +30,9 @@ points:
               skip: true
         pinky:
           key:
-            stagger: 0.3 * kx
+            stagger: 0.3kx
             splay: -5
-            spread: 1.05py
+            spread: 1.01py
           rows:
             bottom:
             home:
@@ -40,25 +40,26 @@ points:
               skip: true
         ring:
           key:
-            stagger: 0.7 * kx
+            stagger: 0.7kx
             splay: -5
-            spread: 1.1py
+            spread: 1.05py
         middle:
           key:
-            stagger: 0.35 * kx
+            stagger: 0.35kx
         index:
           key:
-            stagger: -0.40 * kx
+            stagger: -0.40kx
         inner:
           key:
-            stagger: -0.15 * kx
+            stagger: -0.15kx
       rows:
         bottom:
         home:
         top:
     thumbs:
       anchor:
-        shift: [100, -100]
+        shift: [5.45px, -4.45px]
+        rotate: -10
       key:
         padding: 1py
       columns:
@@ -66,13 +67,13 @@ points:
         inner:
           key:
             splay: -10
-            spread: 1.25px
-            stagger: 0.55 * kx
+            spread: 1.15px
+            stagger: 0.55kx
         outer:
           key:
             splay: -10
-            spread: 1.25px
-            stagger: 0.55 * kx
+            spread: 1.15px
+            stagger: 0.55kx
       rows:
         cluster:
           shift: [4.1ky, -0.65ky]
@@ -96,6 +97,8 @@ outlines:
     - what: polygon
       operation: stack
       points:
+        - ref: matrix_outer_home
+          shift: [-0.5px, 0.5px]
         - ref: matrix_pinky_home
           shift: [-0.5px, 0.5px]
         - ref: matrix_ring_top
@@ -109,9 +112,9 @@ outlines:
         - ref: matrix_inner_top
           shift: [0.5px, 0.5px]
         - ref: matrix_inner_top
-          shift: [1.5px, 0.5px]
+          shift: [1.45px, .85px]
         - ref: thumbs_outer_cluster
-          shift: [-0.5px, 0.5px]
+          shift: [.43px, 2.1px]
         - ref: thumbs_outer_cluster
           shift: [0.5px, 0.5px]
         - ref: thumbs_outer_cluster
@@ -124,7 +127,9 @@ outlines:
           shift: [-0.5px, -0.5px]
         - ref: matrix_pinky_bottom
           shift: [-0.5px, -0.5px]
-      fillet: 3
+        - ref: matrix_outer_home
+          shift: [-0.5px, -0.5px]
+      fillet: 2
   combo:
     - name: board
     - operation: subtract
@@ -161,8 +166,8 @@ pcbs:
           orientation: "up"
         where:
           ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
-          shift: [-.15px, 1.15px]
-          rotate: -80
+          shift: [.5px, 1.5px]
+          rotate: -60
       trrs:
         what: trrs_pj320a
         params:
@@ -173,14 +178,5 @@ pcbs:
           TP: GND
         where:
           ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
-          shift: [.5px, 0px]
-          rotate: -80
-      reset:
-        what: button
-        params:
-          from: GND
-          to: RST
-        where:
-          ref.aggregate.parts: [thumbs_outer_cluster, matrix_inner_top]
-          shift: [.5px, -0.5px]
-          rotate: -80
+          shift: [1.45px, .7px]
+          rotate: -60
