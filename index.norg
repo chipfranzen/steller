@@ -16,16 +16,36 @@ Inspired by Steller's Jay.
     - ambient twilights
    -- lamé keycaps
     -- jclpcb can print them in a dye-able material
+   --- will get some cheap keycaps to tide me over.
    - Miryoku layout
    - Angle the pcb and trrs to match the desired keyboard rotation.
+   - I wanted the pcb to be fully reversible, but that's not possible since the kb2040 can't be
+     mounted upside down. My hack is to route the pcb twice, once for each side, with the pcb
+     orientation flipped for the right side.
 
 ** TODOS
-   - ( ) design key layout
-   - ( ) decide on switches
-   - ( ) decide on keycaps
-   - ( ) decide on microcontroller
-   - ( ) design pcb
+   - (x) design key layout
+   - (x) decide on switches
+   - (x) decide on keycaps
+   - (x) decide on microcontroller
+   - (x) design pcb
+   - ( ) redo rowcol diagram now that the pinky cluster changed.
+   - ( ) route pcb
+   - (x) design pcb logo
+
+** To Buy
+   - ( ) pcb
+   - ( ) keycaps
+   - ( ) switches
+   - ( ) hotswap sockets
+   - ( ) microcontrollers
+   - ( ) microcontroller sockets and pins
+   - ( ) trrs jacks
+   - ( ) trrs cable
+   - ( ) smd diodes
+   - ( ) rubber feet
 
 ** Open Questions
    - Do I need two buttons? Boot and reset? I used both to put the kb2040 into bootloader mode for
      the vimboard.
+   -- I do need both. I will have the board mounted face-up on both halves so that I can access the buttons.
