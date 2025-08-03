@@ -21,10 +21,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.5689363"
-     inkscape:cx="397.72169"
-     inkscape:cy="781.73983"
-     inkscape:window-width="1878"
+     inkscape:zoom="0.39223408"
+     inkscape:cx="-28.044478"
+     inkscape:cy="574.9118"
+     inkscape:window-width="1251"
      inkscape:window-height="989"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -493,26 +493,6 @@
        d="m 521.74574,685.59565 v 124.725"
        id="path108" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
-       d="M 191.21235,700.47458 V 934.39102"
-       id="path112" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
-       d="M 599.13203,1004.5022 645.66037,901.88492 475.48138,863.00508 482.4925,663.50686"
-       id="path113" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
-       d="M 530.29559,992.3921 545.59257,905.07179 409.8318,894.8738 408.55706,660.31998"
-       id="path114" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
-       d="M 496.51474,940.76477 333.34686,913.99504 339.72061,612.5169"
-       id="path115" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
-       d="M 266.42254,909.53341 261.32355,637.3745"
-       id="path116" />
-    <path
        style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
        d="M 137.03552,780.14639 C 413.01868,618.25327 527.10871,724.69481 527.10871,724.69481"
        id="path117" />
@@ -535,7 +515,7 @@
        y="772.49792"
        id="text120"><tspan
          sodipodi:role="line"
-         id="tspan120"></tspan></text>
+         id="tspan120" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:26.6667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#ff0000;stroke-width:2;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal"
@@ -626,5 +606,25 @@
          id="tspan122-3"
          x="225.24902"
          y="629.21613">Col 2</tspan></text>
+    <path
+       style="fill:none;stroke:#1406f7;stroke-width:4;fill-opacity:1;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:round"
+       d="m 196.31135,709.39783 -2.5495,188.66285 255.58718,37.6051"
+       id="path109" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1406f7;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 263.23567,693.46346 c -3.18687,1.91213 -1.27475,159.981 -1.27475,159.981 l 270.88417,75.84757"
+       id="path110" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1406f7;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 333.98424,675.61698 5.099,163.16787 275.34578,101.97992"
+       id="path111" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1406f7;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 400.27119,698.56246 2.5495,140.22239"
+       id="path112" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#1406f7;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 484.40462,711.30995 474.20663,866.82933"
+       id="path113" />
   </g>
 </svg>

@@ -22,10 +22,13 @@ points:
         spread: 1py
       columns:
         outer:
+          key:
+            column_net: P5
           rows:
             bottom:
               skip: true
             home:
+              row_net: P15
             top:
               skip: true
         pinky:
@@ -33,6 +36,7 @@ points:
             stagger: 0.3kx
             splay: -5
             spread: 1.01py
+            column_net: P5
           rows:
             bottom:
             home:
@@ -43,19 +47,26 @@ points:
             stagger: 0.7kx
             splay: -5
             spread: 1.05py
+            column_net: P6
         middle:
           key:
             stagger: 0.35kx
+            column_net: P9
         index:
           key:
             stagger: -0.40kx
+            column_net: P8
         inner:
           key:
             stagger: -0.15kx
+            column_net: P7
       rows:
         bottom:
+          row_net: P16
         home:
+          row_net: P14
         top:
+          row_net: P15
     thumbs:
       anchor:
         shift: [5.45px, -4.45px]
@@ -64,18 +75,23 @@ points:
         padding: 1py
       columns:
         home:
+          key:
+            column_net: P5
         inner:
           key:
             splay: -10
             spread: 1.15px
             stagger: 0.55kx
+            column_net: P6
         outer:
           key:
             splay: -10
             spread: 1.15px
             stagger: 0.55kx
+            column_net: P9
       rows:
         cluster:
+          row_net: P10
           shift: [4.1ky, -0.65ky]
 
 outlines:
